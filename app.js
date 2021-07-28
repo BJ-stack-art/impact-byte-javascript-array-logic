@@ -71,3 +71,52 @@ console.log(countNumber([10,10,10,10,10])); */
 } 
 
 console.log(reverseArray([456789, 332])); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 3. Unique Array
+/* 
+    Buatlah sebuah fungsi yang dapat memunuculkan data unique (tidak ada yang duplicate) di dalam array.
+
+    Proses :
+    input [1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7]
+    terdapat duplikat pada angka 1, 2, 4, 5, 2
+    return [1, 4, 5, 6, 2, 3, 7]
+
+    fungsi ini hanya dapat menerima argument tipe data array yang berisi number, dan mengembalikan tipe data array
+
+    [1, 1, 1, 1, 1, 1] -> return [1]
+    [1, 1, 2, 2, ,3 ,3, 4, 4] -> return [1, 2 , 3, 4]
+    [1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7] -> return [1, 4, 5, 6, 2, 3, 7]
+    [] -> return []
+*/
+
+/* const uniquerArray = (arr) => {
+    let result = [];
+    const exist = (number) => {
+        for(let i = 0; i < result.length; i++) 
+            if(result[i] === number) return false
+        return true
+    }
+    
+    for(let i = 0; i < arr.length; i++) {
+        exist(arr[i]) ? 
+                (arr[i]) ? result[result.length] = arr[i] 
+                : '' 
+            : '';
+    }
+
+    return result;
+}
+
+console.log(uniquerArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7])); */
