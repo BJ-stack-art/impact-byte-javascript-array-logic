@@ -120,3 +120,58 @@ console.log(reverseArray([456789, 332])); */
 }
 
 console.log(uniquerArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7])); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 4. Shopping bubble tea
+/* 
+    const listBoba = [
+        ['Xing Fu Tang', 38000], 
+        ['OneZo', 53500],
+        ['KOI The', 36000],
+        ['Chatime', 25000],
+        ['Kokumi', 42000],
+        ['Bubble Station Milk', 13000]
+    ]
+*/
+
+/* const listBoba = [
+    ['Xing Fu Tang', 38000], 
+    ['OneZo', 53500],
+    ['KOI The', 36000],
+    ['Chatime', 25000],
+    ['Kokumi', 42000],
+    ['Bubble Station Milk', 13000]
+]
+
+const jajanBoba = (money) => {
+    console.log(`David mulai jajan dengan uang jajan Rp${money}`)
+    
+    for(let i = 0; i < listBoba.length; i++) {
+        let jajan = listBoba[i][0];
+        let harga = listBoba[i][1];
+
+        if(money > listBoba[i][1]) {
+            console.log(`Dengan uang Rp${money}, cukup untuk beli ${jajan}`)
+            money -= harga;
+            continue;
+        }
+
+        console.log(`Dengan uang Rp${money}, tidak cukup untuk beli ${jajan}`);
+    }
+
+    return money;
+}
+
+jajanBoba(100000); */
