@@ -175,3 +175,50 @@ const jajanBoba = (money) => {
 }
 
 jajanBoba(100000); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Bonus
+// 5. Search Same data
+/* 
+    buatlah sebuah fungsi yang dapat mencari value yang sama dari kedua list data array.
+    fungsi ini menerima dua argument tipe data array yang berisi number, dan mengembalikan tipe data array
+
+    input : [1, 2, 3, 4, 5, 6, 7] dan [1, 3, 6, 7, 9, 10, 12, 15]
+    data yang sama dari kedua array : 1, 3, 6, 7
+    output return : [1, 3, 6, 7]
+
+    contoh test case
+    [1, 2, 5] dan [1, 4, 6, 7] -> return [1]
+    ["jaya" , "asik", "keren"] dan ["keren", "yea", "asik"] -> return ["asik", "keren"]
+    [] dan [1, 3, 4, 5, 6] -> return []
+*/
+
+/* const searchSame = (arr1, arr2) => {
+    const result = [];
+
+    const exist = (arr , item) => {
+        for(let i = 0; i < arr.length; i++) 
+            if(arr[i] === item) return true
+        return false;
+    }
+
+    for(let i = 0; i < arr1.length; i++) 
+        exist(arr2, arr1[i]) ? 
+            result[result.length] = arr1[i] : ""
+
+    return result;
+}
+
+
+console.log(searchSame(["jaya" , "asik", "keren"] , ["keren", "yea", "asik"])); */
