@@ -222,3 +222,112 @@ jajanBoba(100000); */
 
 
 console.log(searchSame(["jaya" , "asik", "keren"] , ["keren", "yea", "asik"])); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 6. Count Profit
+/* 
+    PT XYZ memiliki beberapa cabang usaha masing masing cabang meberikan laporan bulanan income dan outcome mereka, data ini telah terkumpul dalam bentuk berikut
+
+    Tampilkan hasil profit(income - outcome)
+
+        | br 1 | br 2 | br 3 |
+    jan | 3700 | 1300 | 1500 |
+    feb | 1600 | 300  | 1900 |
+    mar | 1100 | 1100 | 1700 |
+    apr | 1600 | 1800 | 1300 |
+    may | 300  | 1600 | 300  |
+    jun | 1200 | 1800 | 1100 |
+    jul | 1200 | 1700 | 700  |
+    aug | 300  | 1700 | 800  |
+    sep | 1700 | 1500 | 2300 |
+    oct | 1800 | 300  | 400  |
+    nov | 1700 | 800  | 1300 |
+    dec | 1800 | 600  | 1800 |
+*/
+
+/* const month = ['jan', 'feb', 'march', 'april', 'mei', 'jun', 'jul', 'augst', 'sept', 'oct', 'nov', 'dec']
+
+const printBranch = (branches) => {
+    // for 
+    const tables = [month];
+    for(let i = 0; i < branches.length; i++) {
+        // loop income
+        let income = branches[i][0];
+        let outcome = branches[i][1];
+        const profits = [];
+        for(let j = 0; j < income.length; j++) {
+            let profit = income[j] - outcome[j];
+            profits[profits.length] = profit;
+        }
+        tables[tables.length] = profits;
+    }
+
+    // set by rows
+    const rows = [];
+    for(let i = 0; i < tables.length ; i++) {
+        for(let j = 0; j < tables[i].length; j++) {
+            if(!rows[j]) rows[j] = [];
+            rows[j][i] = tables[i][j];
+        }
+    }
+
+    // print in console
+    let th = `month \t|\t `
+    for(let i = 0; i < branches.length ; i++) th+= ` br ${i + 1} \t|\t `
+    console.log(th);
+    for(let i = 0; i < rows.length ; i++) {
+        let row = '';
+        for(let j = 0; j < rows[i].length; j++) {
+            row += ` ${rows[i][j]} \t|\t `
+        }
+        console.log(row);
+    }
+
+}
+
+
+const data1 = [
+    [
+      [1200, 1500, 2000, 1500, 2500, 3500, 3500, 2500, 1200, 2000, 1200, 4000], //Income
+      [500, 700, 700, 700, 1200, 1300, 1300, 1200, 500, 1200, 500, 2200] //Outcome
+    ],
+    [
+      [1200, 2500, 2000, 2000, 1500, 2000, 1200, 1200, 2000, 2500, 2000, 3500], //Income
+      [700, 1200, 700, 1200, 700, 1200, 500, 500, 500, 1200, 1200, 1700] //Outcome
+    ],
+    [
+      [2000, 1500, 1200, 1200, 1500, 2000, 2000, 2500, 2000, 2500, 2000, 4000], //Income
+      [500, 600, 500, 700, 1200, 1200, 1200, 1500, 1200, 1500, 1200, 2200] //Outcome
+    ]
+  ]
+
+console.log('Test Case ke 1');
+printBranch(data1);
+
+
+
+const data2 = [
+    [
+      [1200, 1500, 2000, 1500, 2500, 3500, 3500, 2500, 1200, 2000, 1200, 4000], //Income
+      [500, 700, 700, 700, 1200, 1300, 1300, 1200, 500, 1200, 500, 2200] //Outcome
+    ]
+]
+console.log('Test Case ke 2');
+printBranch(data2); */
+
+
