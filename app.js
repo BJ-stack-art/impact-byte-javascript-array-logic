@@ -14,7 +14,7 @@
     [] -> return 0
 */
 
-/* const countNumber = (arr) => {
+const countNumber = (arr) => {
     let total = 0;
     for(let i = 0; i < arr.length; i++) {
         total += arr[i];
@@ -23,7 +23,7 @@
     return total;
 }
 
-console.log(countNumber([10,10,10,10,10])); */
+console.log(countNumber([10,10,10,10,10]));
 
 
 
@@ -56,13 +56,14 @@ console.log(countNumber([10,10,10,10,10])); */
     [] -> return []
 */
 
-/* const reverseArray = (arr) => {
+const reverseArray = (arr) => {
     let result = [];
     let ri = 0;
     for(let i = arr.length -1; i >= 0 ; i--) {
         let index = arr[i].toString();
         let reverseIndex = '';
-        for(let j = index.length -1; j >= 0; j--) reverseIndex += index[j];
+        for(let j = index.length -1; j >= 0; j--) 
+            reverseIndex += index[j];
         result[ri] = Number(reverseIndex);
         ri++;
     }
@@ -70,7 +71,7 @@ console.log(countNumber([10,10,10,10,10])); */
     return result;
 } 
 
-console.log(reverseArray([456789, 332])); */
+console.log(reverseArray([456789, 332]));
 
 
 
@@ -101,7 +102,7 @@ console.log(reverseArray([456789, 332])); */
     [] -> return []
 */
 
-/* const uniquerArray = (arr) => {
+const uniquerArray = (arr) => {
     let result = [];
     const exist = (number) => {
         for(let i = 0; i < result.length; i++) 
@@ -119,7 +120,7 @@ console.log(reverseArray([456789, 332])); */
     return result;
 }
 
-console.log(uniquerArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7])); */
+console.log(uniquerArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7]));
 
 
 
@@ -146,7 +147,7 @@ console.log(uniquerArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7])); */
     ]
 */
 
-/* const listBoba = [
+const listBoba = [
     ['Xing Fu Tang', 38000], 
     ['OneZo', 53500],
     ['KOI The', 36000],
@@ -174,7 +175,7 @@ const jajanBoba = (money) => {
     return money;
 }
 
-jajanBoba(100000); */
+jajanBoba(100000);
 
 
 
@@ -204,7 +205,7 @@ jajanBoba(100000); */
     [] dan [1, 3, 4, 5, 6] -> return []
 */
 
-/* const searchSame = (arr1, arr2) => {
+const searchSame = (arr1, arr2) => {
     const result = [];
 
     const exist = (arr , item) => {
@@ -221,7 +222,7 @@ jajanBoba(100000); */
 }
 
 
-console.log(searchSame(["jaya" , "asik", "keren"] , ["keren", "yea", "asik"])); */
+console.log(searchSame(["jaya" , "asik", "keren"] , ["keren", "yea", "asik"]));
 
 
 
@@ -260,7 +261,7 @@ console.log(searchSame(["jaya" , "asik", "keren"] , ["keren", "yea", "asik"])); 
     dec | 1800 | 600  | 1800 |
 */
 
-/* const month = ['jan', 'feb', 'march', 'april', 'mei', 'jun', 'jul', 'augst', 'sept', 'oct', 'nov', 'dec']
+const month = ['jan', 'feb', 'march', 'april', 'mei', 'jun', 'jul', 'augst', 'sept', 'oct', 'nov', 'dec']
 
 const printBranch = (branches) => {
     // for 
@@ -292,9 +293,9 @@ const printBranch = (branches) => {
     console.log(th);
     for(let i = 0; i < rows.length ; i++) {
         let row = '';
-        for(let j = 0; j < rows[i].length; j++) {
-            row += ` ${rows[i][j]} \t|\t `
-        }
+        for(let j = 0; j < rows[i].length; j++) 
+            row += ` ${rows[i][j]} \t|\t `;
+
         console.log(row);
     }
 
@@ -328,6 +329,6 @@ const data2 = [
     ]
 ]
 console.log('Test Case ke 2');
-printBranch(data2); */
+printBranch(data2);
 
 
